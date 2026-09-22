@@ -15,8 +15,5 @@ timestamp_01 = time.time()
 # de los "n" numeros naturales
 n = 100
 sum = 0
-
-#ciclo for
-for number in range(1,n+1):
-    sum = sum + n
-print("") 
+  for number in range(1,n+1):
+    print(str)(number)(+ " ")
