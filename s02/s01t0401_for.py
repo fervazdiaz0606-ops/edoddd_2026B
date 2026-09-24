@@ -8,29 +8,35 @@ calculara la suma del 1 al 100
 # importamos biblioteca time
 import time
 
-#creando una marca de tiempo
-timestamp_01 = time.time()
+#Funcion que suma los primeros numeros "n" naturales
+def sum_of_n(n):
+    total_sum = 0
+    #sumando los "n" 
+    for number in range(1,n+1):
+      total_sum = total_sum + number
+    #adsf
+    return total_sum
 
-#programa que calcula las sumas
-# de los "n" numeros naturales
-n = 100
-total_sum = 0
+dataset = [] #
 
-#ciclo for
-for number in range(1,n+1):
+for reptition in range (1,11):
+  
+  #Toma el tiempo 
+  timestamp_01 = time.time()
+  #suma los "n" numeros
+  n = reptition*500
+  result = sum_of_n(n)
+  timestamp_02 = time.time()
 
-    total_sum = total_sum + number
-    #1: sum<- 0 + 1
-    # sum = 1
-    #2: sum<- 1 + 2
-    # sum = 3
-    #3: sum<- 3 + 3
-    #...
-    #100: sum <- sum_(-1) + 100
-print(f"La suma de 1 hasta {100} es: {total_sum}")
+  elepsed_time= round((timestamp_02-timestamp_01) * 1e6,2)
 
-#tomando el tiempo final
-timestamp_02 = time.time()
+#Agregar la tripleta de los 
+#datos al datset
+  dataset.append( (n,elepsed_time,result) )
 
 #impresion del tiempo de ejecucion
-print(f"Tiempo de ejecucion: {(timestamp_02-timestamp_01) * 1e6:.2f} μs")
+
+# Imprimir el dataset 
+for tup in dataset:
+  print(tup)
+
