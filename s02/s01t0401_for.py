@@ -1,11 +1,4 @@
-"""
-escribir un programa que calcule
- la suma de los "n" numeros naturales.
-Por ejemplo si n = 100, el programa
-calculara la suma del 1 al 100
-42
-"""
-# importamos biblioteca time
+#
 import time
 
 #Funcion que suma los primeros numeros "n" naturales
@@ -20,7 +13,7 @@ def sum_of_n(n):
 dataset = [] #
 
 for reptition in range (1,11):
-  
+ 
   #Toma el tiempo 
   timestamp_01 = time.time()
   #suma los "n" numeros
@@ -39,4 +32,4 @@ for reptition in range (1,11):
 # Imprimir el dataset 
 for tup in dataset:
   print(tup)
-
+  
