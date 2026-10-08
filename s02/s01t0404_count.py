@@ -15,4 +15,4 @@ def random_function(students):
 
 print(random_function(student_list_01))
 
-# Calcular  la BigO (4)
+# Calcular O(2n)+O(5) = O(2n+5) = O(n)
