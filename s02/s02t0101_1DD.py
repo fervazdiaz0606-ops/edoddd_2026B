@@ -25,5 +25,5 @@ print(len(my_array)) # O(1)
 
 #Interaccion por indices 
 for i in range(len(my_array)): # O(n)
-  if my_array[i] % 2 == 0: 
-    print(f"Elemento {i}: {my_array[i]}") # O(1)
+    if i % 2 == 0: # O(1)
+        print(f"Elemento Num {i+1}: {my_array[i]}") 
